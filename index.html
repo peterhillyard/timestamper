@@ -71,6 +71,9 @@
             margin-top: 10px;
             border: 1px solid #ccc;
             border-radius: 3px;
+            min-height: 60px;
+            resize: vertical;
+            font-family: sans-serif;
         }
         .delete-btn {
             background-color: #dc3545;
@@ -159,8 +162,7 @@
             const timeParagraph = document.createElement('p');
             timeParagraph.textContent = `Timestamp: ${timestamp}`;
 
-            const noteInput = document.createElement('input');
-            noteInput.type = 'text';
+            const noteInput = document.createElement('textarea');
             noteInput.classList.add('note-text-field');
             noteInput.placeholder = 'Add your note here...';
 
